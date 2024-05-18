@@ -1,0 +1,4 @@
+docker exec --interactive --tty kafka1  \
+kafka-console-consumer --bootstrap-server kafka1:19092 \
+                       --topic test-topic --group console-consumer-33138\
+                       --property "key.separator= - " --property "print.key=true"
